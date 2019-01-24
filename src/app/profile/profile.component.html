@@ -1,0 +1,83 @@
+<div class="container">
+   <div class="jumbotron mt-5" >
+      <h1 class="text-center text-success" style="text-decoration:underline "><b>Profile</b></h1>
+     <img src="assets/r.JPG" height="200px" width="200px" class="rounded-circle mx-auto d-block">
+     
+     <div class="row">
+   
+   <div class="col-sm-4"></div>
+ 
+   <div class="col-sm-4 pt-4">
+ <table>
+         <tr *ngFor="let i of data">
+          <td><b>Name:</b></td>
+           <td>{{i.name}}</td> 
+         </tr>
+ 
+         <tr *ngFor="let i of data" >
+               <td><b>Full Name:</b></td>
+               <td>{{i.username}}</td>
+             </tr>
+
+         <tr *ngFor="let i of data">
+           <td><b>Email:</b></td> 
+           <td>{{i.email}}</td>
+         </tr>
+ 
+         
+ 
+         <tr *ngFor="let i of data">
+           <td><b>ContactNo:</b></td>
+           <td>{{i.number}}</td>  
+         </tr><br/>
+         <tr *ngFor="let i of data">
+            <td>
+           <button type="button" data-target="#y" data-toggle="modal" (click)="editProfile(i)"   class="btn btn-success">UpdateProfile</button>
+         </td>
+         </tr>
+ 
+         <div class="modal"  id="y">
+             <div class="modal-dialog">
+               <div class="modal-content">
+               <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">X</button>
+               </div>
+         
+                 
+                 <div class="modal-body">
+                     <form #ref1="ngForm" >
+                        <label><b>Name:</b></label>
+                        <input type="text" name="name" class="form-control" [(ngModel)]="profileData.name">
+         
+                        <label><b>Full Name:</b></label>
+                        <input type="text" name="username" class="form-control" [(ngModel)]="profileData.username" >
+         
+                        <label><b>Email:</b></label>
+                        <input type="text" name="email" class="form-control" [(ngModel)]="profileData.email" >
+         
+                        
+                        <label><b>Contact No:</b></label>
+                        <input type="text" name="number" class="form-control"  [(ngModel)]="profileData.number">
+         
+                        <button type="button" class="btn btn-success mt-5 float-right"   data-dismiss="modal" (click)="saveProfile()">Save</button>
+         
+                        </form>
+                 </div>
+               </div>
+         
+               
+             </div>
+           </div>
+     
+       </table>
+         
+   
+   </div>
+ 
+   
+   <div class="col-sm-4"></div>
+ </div>
+</div>
+ </div>
+ 
+ 

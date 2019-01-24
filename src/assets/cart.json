@@ -1,0 +1,5 @@
+[{"sno":1,"itemid":2131,"coursename":"JAVA","cost":1000},
+    {"sno":2,"itemid":2156,"coursename":"C++","cost":1050},
+    {"sno":3,"itemid":2131,"coursename":"C","cost":1500},
+    {"sno":4,"itemid":2131,"coursename":"Angular","cost":2000},
+    {"sno":5,"itemid":2131,"coursename":"MEAN STACK","cost":6000}]

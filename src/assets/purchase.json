@@ -1,0 +1,8 @@
+[{"personid":100,"name":"Rakesh","courseid":121,"coursename":"Java","email":"email12@gmail.com","phone":984865858},
+    {"personid":101,"name":"Ravi","courseid":122,"coursename":"C++","email":"email123@gmail.com","phone":984865868},
+    {"personid":102,"name":"Rani","courseid":123,"coursename":"C","email":"email124@gmail.com","phone":984865858},
+    {"personid":103,"name":"Raju","courseid":124,"coursename":"C++","email":"email125@gmail.com","phone":984865858},
+    {"personid":104,"name":"Ramesh","courseid":125,"coursename":"Java","email":"email126@gmail.com","phone":984865858},
+    {"personid":105,"name":"Rajesh","courseid":126,"coursename":"ANGULAR","email":"email127@gmail.com","phone":984865858},
+    {"personid":106,"name":"Neelima","courseid":127,"coursename":"MEAN STACK","email":"email128@gmail.com","phone":984865858},
+    {"personid":107,"name":"Vineeth","courseid":128,"coursename":"Java","email":"email129@gmail.com","phone":984865858}]

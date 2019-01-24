@@ -1,0 +1,31 @@
+<div class="container bg-secondary">
+    
+  <div class="jumbotron pt-5 mt-5">
+    
+    <h1 class="text-center text-info" style="text-decoration:underline">History Profile</h1>
+    <div class="row">
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8 mt-5">
+          <input type="text" name="searchTerm" class="mt-3" [(ngModel)]="searchTerm">
+        <table class="table table-bordered">
+          <thead class="bg-info">
+            <th>Course Id</th>
+          
+            <th>Course name</th>
+            <th>Button</th>
+          </thead> 
+
+          <tr *ngFor="let i of data | search:searchTerm | paginate:{itemsPerPage:3,currentPage:p};">
+            <td>{{i.courseid}}</td>
+            <td>{{i.coursename}}</td>
+           <td> <button type="download" class="btn btn-success ">Download</button></td>
+          </tr> 
+        </table>
+        <pagination-controls (pageChange)="p=$event"></pagination-controls>
+      </div>
+      
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+</div>
