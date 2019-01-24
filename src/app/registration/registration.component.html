@@ -60,12 +60,12 @@
 
             <div class="form-check">
               <label class="form-check-label">  Gender <br/>
-                <input type="radio" name="gender" value="male" class="form-check-input" [(ngModel)]="gender" >Male</label>
+                <input type="radio" name="gender" value="male" class="form-check-input" [(ngModel)]=gender >Male</label>
             </div>
 
             <div class="form-check">
                 <label class="form-check-label">
-                  <input type="radio" name="gender" value="female" class="form-check-input"  [(ngModel)]="gender" >Female</label>
+                  <input type="radio" name="gender" value="female" class="form-check-input"  [(ngModel)]=gender >Female</label>
               </div>
 
             <button type="submit" [disabled]="ref.invalid" class="btn btn-success float-right" >Submit</button>
