@@ -26,7 +26,6 @@ import { PurchaseComponent } from './purchase/purchase.component';
 import { SearchPipe } from './search.pipe';
 import { NamePipe } from './name.pipe';
 import { CoursePipe } from './course.pipe';
-import { CourseComponent } from './course/course.component';
 
 
 @NgModule({
@@ -51,7 +50,6 @@ import { CourseComponent } from './course/course.component';
     SearchPipe,
     NamePipe,
     CoursePipe,
-    CourseComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,7 +16,6 @@ import { User1Component } from './user1/user1.component';
 import { SubscriberComponent } from './subscriber/subscriber.component';
 import { CrudComponent } from './crud/crud.component';
 import { PurchaseComponent } from './purchase/purchase.component';
-import { CourseComponent } from './course/course.component';
 
 const routes: Routes = [
   {path:"home1",component:Home1Component,
@@ -24,7 +23,7 @@ const routes: Routes = [
   {path:"whythis",component:WhythisComponent},
   {path:"authors",component:AuthorComponent},
   {path:"register",component:RegistrationComponent},  
-  {path:"login",component:LoginComponent},{path:"course",component:CourseComponent}]},
+  {path:"login",component:LoginComponent},]},
   {path:"home1/login/register",component:RegistrationComponent},
   
  
