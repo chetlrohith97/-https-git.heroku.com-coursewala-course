@@ -8,8 +8,8 @@ import { CrudService } from '../crud.service';
   styleUrls: ['./crud.component.css']
 })
 export class CrudComponent implements OnInit {
-  data:object[]=[];
-  edit:object[]=[];
+  data:any[];
+  edit:any={};
   coursename:string;
   coursedetails:string;
   courseauthor:string;
