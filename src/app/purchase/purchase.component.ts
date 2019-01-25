@@ -8,6 +8,12 @@ import { DataService } from '../data.service';
 })
 export class PurchaseComponent implements OnInit {
 data:object[]=[];
+personid:string;
+name:string;
+courseid:string;
+coursename:string;
+email:string;
+phone:string;
   constructor(private ds:DataService) { }
 
   ngOnInit() 
