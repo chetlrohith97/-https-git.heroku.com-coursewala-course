@@ -14,6 +14,8 @@ courseid:string;
 coursename:string;
 email:string;
 phone:string;
+nameTerm:string;
+p:number;
   constructor(private ds:DataService) { }
 
   ngOnInit() 
