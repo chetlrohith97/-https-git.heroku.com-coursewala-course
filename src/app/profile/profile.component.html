@@ -47,13 +47,13 @@
                  <div class="modal-body">
                      <form #ref1="ngForm" >
                         <label><b>Name:</b></label>
-                        <input type="text" name="name" class="form-control" [(ngModel)]='profileData.name'>
+                        <input type="text" name="name" class="form-control" [(ngModel)]="profileData.name">
          
                         <label><b>Full Name:</b></label>
                         <input type="text" name="username" class="form-control" [(ngModel)]='profileData.username'>
          
                         <label><b>Email:</b></label>
-                        <input type="text" name="email" class="form-control" [(ngModel)]='profileData.email'>
+                        <input type="text" name="email" class="form-control" [(ngModel)]=profileData.email>
          
                         
                         <label><b>Contact No:</b></label>
