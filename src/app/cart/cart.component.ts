@@ -10,6 +10,7 @@ export class CartComponent implements OnInit {
   data:object[]=[];
   constructor(private ds:DataService) { }
 p:number;
+courseTerm:string;
   ngOnInit() 
   {
     this.ds.getData().subscribe(temp=>{this.data=temp})

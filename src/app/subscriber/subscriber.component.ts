@@ -10,6 +10,7 @@ import { SubscriberService } from '../subscriber.service';
 export class SubscriberComponent implements OnInit {
   data:object[]=[];
   p:number;
+  nameTerm:string;
   constructor(private sub:SubscriberService) { }
 
   ngOnInit() 

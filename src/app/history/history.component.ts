@@ -8,6 +8,9 @@ import { DataService } from '../data.service';
 })
 export class HistoryComponent implements OnInit {
   data:object[]=[];
+  searchTerm:string;
+  p:number;
+  
   constructor(private ds:DataService) { }
 
   ngOnInit()

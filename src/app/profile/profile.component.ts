@@ -9,7 +9,10 @@ import { ProfileService } from '../profile.service';
 export class ProfileComponent implements OnInit {
   b:boolean=false;
   data:object;
-
+name:string;
+username:string;
+email:string;
+number:string;  
   profileData:any[]=[];
 
   constructor(private profile:ProfileService) { }

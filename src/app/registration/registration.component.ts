@@ -15,7 +15,7 @@ export class RegistrationComponent implements OnInit {
   number:number;
   password:string;
   conformpassword:string
-  
+  gender:string;
 
   constructor(private router:Router,private register:RegisterService) { }
 

@@ -12,13 +12,16 @@ export class CrudComponent implements OnInit {
   edit:object[]=[];
   coursename:string;
   coursedetails:string;
-  courseauthor:any;
-  authordetails:any;
-  authorimage:any;
-  enterprice:any;
-  user:any;
-  samplefile:any;
-  mainfile:any;
+  courseauthor:string;
+  authordetails:string;
+  authorimage:string;
+  enterprice:string;
+  user:string;
+  samplefile:string;
+  mainfile:string;
+  searchTerm:string;
+  p:number;
+
 
   constructor(private ds:DataService, private crud:CrudService) { }
 
