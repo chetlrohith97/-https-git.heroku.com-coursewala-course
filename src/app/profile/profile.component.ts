@@ -14,8 +14,8 @@ name:string;
 username:string;
 email:string;
 number:string;  
- 
-
+nameTerm:string;
+p:number;
   constructor(private profile:ProfileService) { }
 
   //retriving data from service
