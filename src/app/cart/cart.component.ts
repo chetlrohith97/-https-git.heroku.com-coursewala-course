@@ -9,7 +9,7 @@ import { DataService } from '../data.service';
 export class CartComponent implements OnInit {
   data:object[]=[];
   constructor(private ds:DataService) { }
-
+p:number;
   ngOnInit() 
   {
     this.ds.getData().subscribe(temp=>{this.data=temp})
