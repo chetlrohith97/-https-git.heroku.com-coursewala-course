@@ -7,13 +7,14 @@ import { ProfileService } from '../profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  profileData:any[]=[];
   b:boolean=false;
   data:object;
 name:string;
 username:string;
 email:string;
 number:string;  
-  profileData:any[]=[];
+ 
 
   constructor(private profile:ProfileService) { }
 
