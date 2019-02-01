@@ -10,7 +10,7 @@ import * as jwt_decode from 'jwt-decode'
 })
 export class LoginComponent  {
 
-  name:string;
+  username:string;
   password:string;
   expiryDate:number;
   todayDate:number;
@@ -43,7 +43,7 @@ export class LoginComponent  {
 
 readData1(v)
 {
-if(v.name=="admin"  && v.password=="admin1"){
+if(v.username=="admin"  && v.password=="admin1"){
   this.router.navigate(["admin"]);
   console.log(v);
 }
@@ -52,7 +52,7 @@ else
   this.login.loginData(v);
 }
 console.log(v);
-this.name="";
+this.username="";
 this.password="";
 
 }
