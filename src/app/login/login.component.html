@@ -12,7 +12,7 @@
           <form #ref="ngForm" (ngSubmit)="readData1(ref.value)" class="mt-4">
             
             <div class="form-group">
-              <input type="text" name="name" [(ngModel)]="name" class="form-control" 
+              <input type="text" name="username" [(ngModel)]="username" class="form-control" 
               placeholder="Enter  Name..."  #ref1="ngModel"  required minlength="5">
               <label *ngIf="ref1.touched && ref1.invalid" class="text-danger">Min 5 Characters are required</label>
             </div>

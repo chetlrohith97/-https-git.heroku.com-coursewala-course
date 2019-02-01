@@ -105,7 +105,7 @@ app.post('/home1/register',(req,res,next)=>{
 app.post('/home1/login',(req,res,next)=>{
 
     pro=req.body.name;
-    dbo.collection('registration').find({name:req.body.name}).toArray((err,data)=>{
+    dbo.collection('registration').find({username:req.body.username}).toArray((err,data)=>{
         if(err){
             console.log("error during connetion")
         }
@@ -122,7 +122,7 @@ app.post('/home1/login',(req,res,next)=>{
                 else if(success==true){
                     v=req.body.name;
                     console.log(v)
-                    var jwtBearerToken=jwt.sign({name:req.body.name},s,{expiresIn:500});
+                    var jwtBearerToken=jwt.sign({username:req.body.username},s,{expiresIn:500});
                     console.log('token is'+jwtBearerToken);
                     res.status(200).json({
                             idToken:jwtBearerToken
