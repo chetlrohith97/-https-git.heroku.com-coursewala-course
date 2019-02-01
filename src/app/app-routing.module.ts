@@ -16,6 +16,7 @@ import { User1Component } from './user1/user1.component';
 import { SubscriberComponent } from './subscriber/subscriber.component';
 import { CrudComponent } from './crud/crud.component';
 import { PurchaseComponent } from './purchase/purchase.component';
+import { JavacomponentComponent } from './javacomponent/javacomponent.component';
 
 const routes: Routes = [
   {path:"home1",component:Home1Component,
@@ -29,6 +30,9 @@ const routes: Routes = [
  
   {path:"user",component:UserComponent,
   children:[{path:"",component:User1Component},
+  {path:"user1",component:User1Component},
+  {path:"javacomponent",component:JavacomponentComponent},
+  {path:"java",component:JavacomponentComponent},
   {path:"profile",component:ProfileComponent},
   {path:"cart",component:CartComponent},
   {path:"history",component:HistoryComponent}]},

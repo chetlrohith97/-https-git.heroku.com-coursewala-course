@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cart',
@@ -8,11 +9,11 @@ import { DataService } from '../data.service';
 })
 export class CartComponent implements OnInit {
   data:object[]=[];
-  constructor(private ds:DataService) { }
+  constructor(private http:HttpClient) { }
 p:number;
 courseTerm:string;
-  ngOnInit() 
-  {
-    this.ds.getData().subscribe(temp=>{this.data=temp})
+ngOnInit() 
+{
+  this.http.get<any>("api/user/cart").subscribe(temp=>{this.data=temp})
   }
 }

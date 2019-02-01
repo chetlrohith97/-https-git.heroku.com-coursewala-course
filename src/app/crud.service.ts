@@ -10,18 +10,18 @@ export class CrudService {
   constructor(private http:HttpClient) { }
 
   readDataCrud(v):Observable<any>{
-  return  this.http.post('admin/crud',v)
+  return  this.http.post('api/admin/crud',v)
 
   }
 
   readFromCrud():Observable<any>
   {
-    return this.http.get("admin/crud")
+    return this.http.get("api/admin/crud")
   }
 
   dataFromCrudTs(v):Observable<any>
 {
-  return this.http.put<any>('admin/crud',v)
+  return this.http.put<any>('api/admin/crud',v)
 }}
 
 

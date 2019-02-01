@@ -11,7 +11,7 @@ export class RegisterService {
   constructor(private http:HttpClient,private router:Router) { }
   getData(v):Observable<any>{
     console.log(v);
-   return this.http.post('home1/register',v);
+   return this.http.post('api/home1/register',v);
   }
 }
 

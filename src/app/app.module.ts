@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import {NgxPaginationModule} from 'ngx-pagination';
 
@@ -26,6 +26,9 @@ import { PurchaseComponent } from './purchase/purchase.component';
 import { SearchPipe } from './search.pipe';
 import { NamePipe } from './name.pipe';
 import { CoursePipe } from './course.pipe';
+import { JwdDecodeComponent } from './jwd-decode/jwd-decode.component';
+import { Authorization } from './authorization.service';
+import { JavacomponentComponent } from './javacomponent/javacomponent.component';
 
 
 @NgModule({
@@ -50,6 +53,8 @@ import { CoursePipe } from './course.pipe';
     SearchPipe,
     NamePipe,
     CoursePipe,
+    JwdDecodeComponent,
+    JavacomponentComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +62,7 @@ import { CoursePipe } from './course.pipe';
     FormsModule,
     HttpClientModule,NgxPaginationModule
   ],
-  providers: [],
+  providers: [{provide:HTTP_INTERCEPTORS,useClass:Authorization,multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

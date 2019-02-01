@@ -10,6 +10,6 @@ export class SubscriberService {
   constructor(private http:HttpClient) { }
 
   subsData():Observable<any>{
-    return this.http.get('admin/subscriber');
+    return this.http.get('api/admin/subscriber');
   }
 }

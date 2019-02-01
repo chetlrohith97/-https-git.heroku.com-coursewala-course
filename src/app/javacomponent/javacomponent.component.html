@@ -1,0 +1,55 @@
+<div class="jumbotron" style="background-color:rgb(230, 226, 221)">
+  
+  <div class="row">
+      <div class="col-sm">
+         <h3 class="text-center mt-5" style="color:rgb(153, 149, 155); text-decoration:underline" >JAVA</h3>
+      </div>
+  </div> 
+  
+       <div class="row ">
+         <div class="col-sm-1"></div>
+           <div class="col-sm-5 mt-5">
+           
+             <p class="mt-3">Java language is a general-purpose programming language. It can be used to develop software for mobile devices, browser-run applets, games, as well as desktop, enterprise (server-side), and scientific applications.
+                Java platform consists of Java virtual machine (JVM) responsible for hardware abstraction, and a set of libraries that gives Java a rich foundation.
+                Java tools include the Java compiler as well as various other helper applications that are used for day-to-day development</p>
+            
+                <p>Java technology is used to develop applications for a wide range of environments, from consumer devices to heterogeneous enterprise systems. In this section, get a high-level view of the Java platform and its components.</p>
+        
+          </div>
+          <div class="col-sm-5 mt-5">
+              <img src="assets/java-training1.jpg" width="250px" height="250">
+          </div>
+        </div>
+        
+  
+        <div class="row">
+          <div class="col-sm-3"></div>
+           <div class="col-sm-6">
+               <button type="button" class="btn btn-success form-control" (click)="download()">Sample File</button>
+  
+             <button type="button" class="btn btn-info form-control" routerLink="login" class="text-primary"><b>Main File</b></button>
+            
+           </div>
+        </div>
+          
+     
+ 
+ 
+    <div class="table-responsive-sm">
+      <table class="table table-striped">
+        <thead>
+          <th>Course-Name</th>
+          <th>Price</th>
+          <th>Add</th>
+        </thead>
+        <tr *ngFor="let i of data">
+         <td>{{i.coursename}}</td>
+         <td>{{i.enterprice}}</td>
+          <button type="button" class="btn btn-success" (click)="addCart(i)">Add TO Cart</button>
+        </tr>
+      </table>
+    </div>
+ 
+   </div>
+ 

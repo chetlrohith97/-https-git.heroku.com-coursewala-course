@@ -13,8 +13,8 @@
             
             <div class="form-group">
               <input type="text" name="name" [(ngModel)]="name" class="form-control" 
-              placeholder="Enter Email id or Phone number" placeholder="User Name" #ref1="ngModel"  required minlength="4">
-              <label *ngIf="ref1.touched && ref1.invalid" class="text-danger">Min 4 Characters are required</label>
+              placeholder="Enter  Name..."  #ref1="ngModel"  required minlength="5">
+              <label *ngIf="ref1.touched && ref1.invalid" class="text-danger">Min 5 Characters are required</label>
             </div>
 
             <div class="form-group mt-4">

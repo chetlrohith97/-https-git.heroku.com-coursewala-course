@@ -9,18 +9,30 @@ export class LoginService {
 
   constructor(private http:HttpClient,private router:Router) { }
   loginData(v){
-    this.http.post('home1/login',v).subscribe(temp=>{alert(temp)
-      if(temp==="logged in successful"){
+    this.http.post('api/home1/login',v).subscribe(res=>{
+
+      localStorage.setItem('id_token',res['idToken'])
+
+      if(res==="wrong password")
+      {
+        alert('wrong password')
+        this.router.navigate(['/home1/login']);
+      }
+      else if(res=="user name not matched")
+      {
+        alert('user name not matched')
+        this.router.navigate(['/home1/login'])
+      }
+      else
+      {
+        alert('login successfully')
         console.log(v);
         this.router.navigate(['/user']);
       } 
-      // else{
-      //   this.router.navigate(['/admin']);
-      // }
-      if(temp==="wrong password")
-      {
-        this.router.navigate(['/home1/login']);
-      }
+      
+      
     });
+
+    
 }
 }
