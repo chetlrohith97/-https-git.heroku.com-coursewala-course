@@ -12,6 +12,7 @@ export class CartComponent implements OnInit {
   constructor(private http:HttpClient) { }
 p:number;
 courseTerm:string;
+searchTerm:string;
 ngOnInit() 
 {
   this.http.get<any>("api/user/cart").subscribe(temp=>{this.data=temp})
