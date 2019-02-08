@@ -71,7 +71,7 @@ app.post('/home1/register',(req,res,next)=>{
 
     //check for user exsitance
     dbo.collection('registration').find({username:req.body.username}).toArray((err,data)=>{
-        //if user is not  found then unsert user document
+        //if user is not  found then insert user document
         if(data.length===0){
            bcrypt.hash(req.body.password,10,(err,hashcode)=>{
                if(err){
